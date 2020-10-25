@@ -1,0 +1,87 @@
+.box {
+    width: 100%; height: 100%; background-color: yellow;
+}
+
+.img1 {
+	width: auto; height: 100%;
+    position: relative;
+}
+
+.character {
+	font-family: 'Staatliches', cursive;
+	position: absolute; top: 5%; left: 14%;
+	font-size: 30pt;
+}
+
+.charactertim {
+	font-family: 'Staatliches', cursive;
+	position: absolute; top: 5%; right: 14%;
+	font-size: 30pt;
+}
+
+.text {
+	animation-name: textup;
+	animation-duration: 3s;
+	animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes textup {
+	0% {opacity: 0}
+	50% {opacity: 0}
+	100% {opacity: 1}
+}
+
+.logo {
+	transform: scale(0.1);
+	position: absolute; bottom: -17%; left: -25%;
+}
+
+.p {
+	position: absolute; bottom: 6%; left: 43%;
+	text-align: center;
+	font-family: 'Do Hyeon', sans-serif;
+	color: white;
+	font-size: 20pt;
+}
+
+
+.img2
+{width: 60vh; height: 43vh; 
+position: absolute; top: 200px; left: 600px;
+transition-delay: 5s;
+animation-name: img2opacity;
+animation-duration: 7s;
+animation-fill-mode: forwards;
+
+}
+
+@-webkit-keyframes img2opacity {
+	0% {opacity: 0; width: 60vh; height: 43vh;}
+	40% {opacity: 0; width: 60vh; height: 43vh;}
+	100% {opacity: 1; transform: scale(1.4);} 
+}
+
+.text_all {
+width: 77.5vh; height: 57vh;
+position: absolute; top: 158px; left: 528px;
+
+
+}
+
+.blinking {
+	-webkit-animation:blink 0.5s ease-in-out infinite alternate;
+    -moz-animation:blink 0.5s ease-in-out infinite alternate;
+    animation:blink 0.5s ease-in-out infinite alternate;
+}
+@-webkit-keyframes blink {
+}
+@-moz-keyframes blink {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+@keyframes blink {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+
